@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Professional Ethics Study Guide</title>
+<style>
+:root{--bg:#faf8f4;--fg:#222;--mu:#666;--card:#fff;--bd:#ddd6c8;--ac:#2f6f5e;--ok:#dff3e6;--no:#fbe0de;--tip:#fff1cc;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1c1b;--fg:#eee;--mu:#aaa;--card:#252827;--bd:#3a3e3c;--ac:#6fc2a9;--ok:#1f3d2d;--no:#4a2624;--tip:#4a3f1c}}
+:root[data-theme="dark"]{--bg:#1a1c1b;--fg:#eee;--mu:#aaa;--card:#252827;--bd:#3a3e3c;--ac:#6fc2a9;--ok:#1f3d2d;--no:#4a2624;--tip:#4a3f1c}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 Georgia,serif}
+main{max-width:720px;margin:0 auto;padding:16px}
+h1{font-size:22px;margin:4px 0 12px}
+.row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+button{font:inherit;font-size:14px;border:1px solid var(--bd);background:var(--card);color:var(--fg);border-radius:8px;padding:7px 12px;cursor:pointer}
+button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:12px 14px;margin-bottom:10px}
+.c b{color:var(--ac)}
+.tip{background:var(--tip);border-radius:6px;padding:5px 9px;margin-top:8px;font-size:14px}
+.o{display:block;width:100%;text-align:left;margin-top:6px}
+.o.ok{background:var(--ok)}.o.no{background:var(--no)}
+.fc{min-height:170px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:18px;cursor:pointer}
+.mu{color:var(--mu);font-size:14px}
+</style></head><body><main>
+<h1>📘 Professional Ethics — Study Guide</h1>
+<div class="row" id="secs"></div>
+<div class="row" id="tabs"></div>
+<div id="v"></div>
+</main>
+<script>
+const S=[
+{t:"1. Ethics & Professional Ethics",n:[
+["Ethics","From Greek ethos = customs or habits; also called moral philosophy. The science of the rightness and wrongness of character and conduct; the study of what is right or good in human conduct or character.","Morality = reasoning; Ethics = doing."],
+["Nature of Ethics","A normative science: it seeks to determine norms, ideals or standards of human conduct and character.","Normative → Norms."],
+["Methods of Ethics","Physical/biological (from animals), historical/genetic (from crude customs), psychological (human consciousness), metaphysical (revelation of the divine). The true method is both empirical and transcendental.","Animals → Customs → Mind → God (P-H-P-M)."],
+["End of Ethics","To define the nature of the highest good of humans or society; it is the basis of moral reasoning and the root of all moral distinctions.","End = Highest Good."],
+["Applied Ethics","The art or science of reflecting on moral dilemmas and problems in different social contexts. Childress: application of ethics to special arenas (business, politics, medicine). Beauchamp: use of philosophical methods to treat moral problems, practices and policies.","Childress = arenas; Beauchamp = methods."],
+["Professional Ethics","The ethics of professional life, i.e. of work. Based on the practice of a profession, while applied ethics is primarily academic. 6 criteria: academic education, importance of services, professional degree, professional association, autonomy, ethical code.","“Every Important Degree Attracts Autonomous Codes.” Autonomy matters most."],
+["Norms by relationship","Dependents of your service: honesty, fidelity, care, safety. Workmates: loyalty, solidarity. Employers: loyalty, confidentiality. Norms are prima facie (can be overridden by other norms).","Clients → care; Peers → solidarity; Boss → confidentiality."],
+["Virtue (MacIntyre)","A virtue is an acquired human quality the possession and exercise of which tends to enable us to achieve those goods internal to practices. Professional ethics is a type of virtue ethics. Code of ethics: guides, is a reference, improves standards. Hippocratic Oath = oldest code (4th c. B.C.).","Code = Guide, Reference, Improve."]],
+q:[["Ethics comes from the Greek word ethos, meaning:","customs or habits",["laws","reason","happiness"]],
+["Which says “morality deals with reasoning and ethics with doing”?","Morality → reasoning; Ethics → doing",["Morality → doing; Ethics → reasoning","Both mean laws","Both mean religion"]],
+["Ethics is a ___ science.","normative",["physical","descriptive only","historical"]],
+["Which method traces morality to the conduct of animals seeking pleasure and avoiding pain?","Physical and biological",["Psychological","Metaphysical","Historical"]],
+["Which criterion of a profession is particularly important from an ethical point of view?","Autonomy",["Professional degree","Association","Academic education"]],
+["The oldest and most well-known professional code is the:","Hippocratic Oath",["Code of Hammurabi","Engineers’ Code","Nicomachean Code"]],
+["Professional norms are “prima facie,” meaning they:","may be overridden by other moral norms",["are absolute","apply only to doctors","are legal rules"]]]},
+{t:"2. Freedom & Moral Acts",n:[
+["Foundation of Moral Act","Freedom. According to Kant, we can make sense of moral appraisal and responsibility only by thinking about human freedom. Good moral actions make us freer; bad moral actions make us a slave to our sin.","Good = freer; Bad = slave."],
+["Freedom","Oxford: the power or right to act, speak or think as one wants without hindrance or restraint. (Class scenario: could you roam freely in a city with no rules?)","Freedom + rules — think of the no-rules city."],
+["Free Will","Oxford: the idea that we are able to have some choice on how we act and assumes that we are free to choose our behavior.","Free will = choice."],
+["Human Acts","Actions done intentionally, freely and deliberately by a person. A man properly masters them because he does them with full knowledge of his own will. All human acts are subject to morality.","Human Act = Intentional, Free, Deliberate (moral)."],
+["Acts of Human","Natural involuntary actions; acts of a person without the proper use of reason; actions performed without the intervention of the intellect and the free will.","Acts OF human = happens TO him (not moral)."],
+["The river example","Jumping in to save a drowning person without knowing whether you can swim = Acts of Human. Judging your ability to swim and save first (or asking the right person to do it) = Human Act.","Think first = Human Act."]],
+q:[["The foundation of moral act is:","freedom",["wealth","culture","law"]],
+["Who said moral appraisal and responsibility make sense only through human freedom?","Immanuel Kant",["Aristotle","Kohlberg","MacIntyre"]],
+["Bad moral actions make us:","a slave to our sin",["freer","wiser","virtuous"]],
+["Actions done intentionally, freely and deliberately are:","Human acts",["Acts of human","Reflexes","Instincts"]],
+["Which are natural involuntary actions?","Acts of human",["Human acts","Deliberate acts","Moral acts"]],
+["Jumping in a river without knowing if you can swim is a(n):","Act of human",["Human act","Virtue","Moral standard"]],
+["Free will is the idea that we:","have some choice on how we act",["have no control","follow only rules","follow only culture"]]]},
+{t:"3. Culture & Morality",n:[
+["Culture","The patterns of learned and shared behavior and beliefs of a particular social, ethnic, or age group. Humans use culture to adapt and transform the world. It is fundamental, shared, diverse, constantly evolving, and distinguishes humans from animals.","Culture = learned + shared."],
+["Culture & moral development","Interpersonal factors: family, peers, culture. Intrapersonal factors: cognitive changes, emotions, neurodevelopment. Randy David: culture gives meaning, identity, and a shared sense of belonging.","Inter = others; Intra = inside."],
+["Cultural Relativism","The ability to understand a culture on its own terms and not to judge using the standards of one’s own culture. No culture is superior to another in morality, law, politics, etc.","Relativism = “their terms.”"],
+["Ethnocentrism","A perspective that views one’s own culture as superior to others, often leading to prejudice and lack of understanding or acceptance of different cultural practices.","Ethno = MY culture is best."],
+["Rachels’ 5 claims of Cultural Relativism","1) Societies have different moral codes. 2) The society’s code determines what is right there. 3) No objective standard to judge one code better. 4) Our code has no special status. 5) It is mere arrogance to judge others — adopt tolerance.","D-D-N-N-A: Different, Determines, No standard, No special status, Arrogance. Flaw: claim 5 implies a universal principle (tolerance)."],
+["Filipino values (Moga, 2004)","Religion; hospitality; pakikisama; authority figures; saving “face”; family; cleanliness.","“Real Hosts Practice Authority, Save Face, Family, Clean.”"]],
+q:[["Culture is best described as:","learned and shared behavior and beliefs of a group",["inborn instincts","written laws only","individual habits"]],
+["Family, peers and culture are ___ factors in moral development.","interpersonal",["intrapersonal","neurological","legal"]],
+["Judging another culture solely by your own culture’s standards is:","ethnocentrism",["cultural relativism","virtue","tolerance"]],
+["Understanding a culture on its own terms is:","cultural relativism",["ethnocentrism","egoism","utilitarianism"]],
+["Rachels’ 5th claim of relativists is that:","it is arrogance to judge other people’s conduct",["morals are universal","our code is superior","laws decide morals"]],
+["What inconsistency is noted in the relativist claims?","They imply tolerance is a universal principle",["They deny cultures differ","They support ethnocentrism","They reject tolerance"]],
+["Which is NOT in Moga’s list of Filipino values?","Individualism",["Pakikisama","Saving face","Hospitality"]]]},
+{t:"4. The Moral Agent: Virtue, Kohlberg, Conscience",n:[
+["Virtue (Aristotle)","A trait of character manifested in habitual (good) action; vices are habitual evil acts. Virtue is developed by repeated practice. Moderation is key: courage is a mean between cowardice and foolhardiness; generosity between stinginess and extravagance.","Virtue = habit of good; sweet spot in the middle."],
+["Theories of rightness (Rachels)","Ethical Egoism: promote one’s own interests. Utilitarianism: greatest happiness for the greatest number. Kant: follow rules you could will as universal laws (categorical imperative). Social Contract: rules rational, self-interested people agree on for mutual benefit.","Me → Most people → Universal rule → Agreement."],
+["Kohlberg: Level 1 Pre-conventional","Also the pre-moral level. Stage 1: Punishment-avoidance and obedience. Stage 2: Exchange of favors.","Level 1 = “What’s in it for me?”"],
+["Kohlberg: Level 2 Conventional","Stage 3: Good Boy/Good Girl. Stage 4: Law and Order.","Level 2 = “What do others / rules expect?”"],
+["Kohlberg: Level 3 Post-conventional","Also the principled level. Stage 5: Social Contract. Stage 6: Universal Ethical Principle. (Stage 4½ is a transition; a 7th, Transcendental Morality, is speculative.)","Pre → Con → Post; 1-2 / 3-4 / 5-6."],
+["Conscience","The proximate norm of morality (Agapay); innate; from Latin conscientia, “trial of oneself” — you play judge, prosecutor, defense, witness and accused. It directly confronts actions as good or evil.","Conscience = a courtroom inside you."],
+["Kinds of Conscience","Correct/True, Erroneous/False, Certain, Doubtful, Scrupulous, Lax.","3 pairs: True/False, Certain/Doubtful, Scrupulous/Lax."]],
+q:[["Virtue, per Aristotle, is a trait of character manifested in:","habitual action",["one-time acts","laws","emotions only"]],
+["Courage is a mean between:","cowardice and foolhardiness",["stinginess and extravagance","pride and shame","fear and joy"]],
+["“Greatest happiness for the greatest number” is:","Utilitarianism",["Egoism","Social contract","Kant’s theory"]],
+["Kohlberg’s Stage 4 is:","Law and Order",["Good Boy/Good Girl","Social Contract","Exchange of Favors"]],
+["Stages 5 and 6 belong to the ___ level.","Post-conventional",["Pre-conventional","Conventional","Transcendental"]],
+["“Conscientia” means:","trial of oneself",["knowledge of law","inner peace","habit"]],
+["Which is a kind of conscience?","Scrupulous",["Selfish","Legal","Neutral"]]]},
+{t:"5. Moral vs Non-Moral Standards",n:[
+["Standard","A level of quality or attainment; an idea or thing used as a measure, norm or model in comparative evaluation.","Standard = measuring stick."],
+["Moral Standards","Norms that individuals or groups have about the kinds of actions believed to be morally right or wrong, plus the values placed on what is believed morally good or bad. Norms + Values. They normally promote “the good”: welfare of humans, animals and the environment.","Moral = Norms + Values."],
+["5 Characteristics of Moral Standards","Deal with welfare of beings (serious injury/benefit); rely on sound reasoning, not set or changed by authorities; overriding (take precedence over self-interest); impartial, fair and just; associated with special emotions and vocabulary.","W-R-O-I-E: Welfare, Reasoning, Overriding, Impartial, Emotions."],
+["Non-Moral Standards","Standards by which we judge good/bad and right/wrong in a non-moral way; matters of taste or preference, not linked to moral considerations. Examples: etiquette, law, aesthetics, athletic standards.","Non-moral = Taste: EL-A-A (Etiquette, Law, Aesthetics, Athletics)."],
+["Characteristics of Non-Moral Standards","Welfare of non-beings; rely on authority/law, religion, tradition; limit hegemony; self-interest; no special emotions and vocabulary.","Opposite of the moral 5."],
+["Immoral vs Amoral","The immoral person knowingly violates moral standards; the amoral person may also violate them because he/she has no moral sense.","Immoral = knows; Amoral = no sense."],
+["Cultural differences","What is a matter of moral indifference (taste) in one culture may be of moral significance in another. Example of etiquette: table manners; a violation outside moral scope: wearing shorts to a formal party.","Same act, different weight."]],
+q:[["Moral standards are made of:","norms and values",["laws and taxes","tastes only","traditions only"]],
+["Moral standards take precedence over:","self-interest",["reason","welfare","fairness"]],
+["Moral standards are:","not established or changed by authorities",["set by the government","set by fashion","changed by vote"]],
+["Etiquette is an example of a ___ standard.","non-moral",["moral","immoral","amoral"]],
+["A person who knowingly violates moral standards is:","immoral",["amoral","lax","neutral"]],
+["A person with no moral sense who violates standards is:","amoral",["immoral","virtuous","scrupulous"]],
+["Wearing shorts to a formal party is:","outside moral scope (a non-moral matter)",["a serious moral offense","a crime","immoral"]]]},
+{t:"6. Workplace & Business Ethics",n:[
+["Business Ethics","The set of moral rules that govern how businesses operate, how decisions are made and how people are treated. A form of applied/professional ethics (corporate ethics). T.M. Garrett: the study of the moral rightness or wrongness of acts in the production, distribution and exchange of economic goods and services.","Garrett = Production, Distribution, Exchange."],
+["5 Essentials","Trustworthiness (integrity, honesty, promise-keeping, loyalty); Respect (courtesy, dignity, tolerance, politeness); Responsibility (no excuses, accept responsibility, fulfill obligations, don’t over-promise); Fairness (listen, careful consideration); Caring (compassion, kindness, mercy, empathy, gratitude).","T-R-R-F-C: “Team Rules Require Fair Care.”"],
+["Unethical excuses","Everybody does it; it’s not part of my job description; nobody is going to notice; I don’t get paid enough; unrealistic expectations of the job.","Everyone, Job, Notice, Pay, Expectations."],
+["Benefits of good ethics","Loyalty, desirable work environment, results, good references, good office morale, growth and expansion, recognition.","Good ethics → good morale → growth."],
+["Organizational culture","The characteristic set of values and ways of behaving that employees in an organization share. Ethics apply to internal customers (management and colleagues) and external customers. Encourage ethics via: fair consequences, fair treatment, recognition, clear communication, constructive feedback, plans of action.","Culture = shared values + behavior."],
+["Why business needs ethics","Industrial society’s values spread; growing public awareness; failing expectations loses market share and reputation; unethical practices lead to government control (“prevention is better than cure”).","Society, Public, Market, Government."],
+["Ethical communication","Occurs in 3 fronts: business-to-business, business-to-employees, business-to-public. Unethical communication is based on perception (what others find offensive). Purpose: protect, respect and maintain a good public image. Business values are more defined and obligatory than ethics, which are more inborn.","B2B, B2E, B2P."]],
+q:[["T.M. Garrett defines business ethics as the study of:","moral rightness or wrongness of acts in production, distribution and exchange of goods and services",["profit maximization","business law","marketing tactics"]],
+["Which is NOT one of the five essentials?","Profitability",["Trustworthiness","Respect","Caring"]],
+["“Nobody is going to notice” is an example of a(n):","unethical excuse",["good practice","benefit of ethics","business value"]],
+["Organizational culture is the:","shared set of values and ways of behaving in an organization",["organization’s finances","company logo","legal structure"]],
+["Internal customers are:","management/supervisors and colleagues/employees",["suppliers","the public","government"]],
+["Unethical communication is mostly based on:","perception",["laws","intent only","volume"]],
+["Which is a way to encourage good ethics in the workplace?","Constructive feedback",["Ignoring problems","Gossip","Over-promising"]]]}
+];
+let si=0,tab="n",qs=[],fi=0,flip=false,fd=[];
+const $=id=>document.getElementById(id);
+const sh=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+function nav(){
+$("secs").innerHTML=S.map((s,i)=>`<button class="${i==si?"on":""}" onclick="si=${i};tab='n';newQ();fd=sh(S[si].n);fi=0;flip=false;nav();draw()">${s.t}</button>`).join("");
+$("tabs").innerHTML=[["n","📝 Simplified notes"],["q","✅ Practice quiz"],["f","🃏 Flashcards"]].map(([k,l])=>`<button class="${tab==k?"on":""}" onclick="tab='${k}';nav();draw()">${l}</button>`).join("");}
+function newQ(){qs=sh(S[si].q).slice(0,5).map(x=>({q:x[0],a:x[1],o:sh([x[1],...x[2]]),d:null}))}
+function draw(){const s=S[si],v=$("v");
+if(tab=="n")v.innerHTML=`<p class="mu">Definitions are kept from your file; memory tips are added in yellow.</p>`+s.n.map(x=>`<div class="c"><b>${x[0]}</b><br>${x[1]}<div class="tip">💡 ${x[2]}</div></div>`).join("");
+if(tab=="q"){const sc=qs.filter(q=>q.d!=null&&q.d==q.a).length,dn=qs.filter(q=>q.d!=null).length;
+v.innerHTML=qs.map((q,i)=>`<div class="c"><b>${i+1}. ${q.q}</b>`+q.o.map((o,j)=>`<button class="o ${q.d==null?"":o==q.a?"ok":o==q.d?"no":""}" onclick="ans(${i},${j})">${o}</button>`).join("")+`</div>`).join("")+`<p>Score: ${sc} / ${dn} answered of ${qs.length}</p><button class="on" onclick="newQ();draw()">🔄 Generate new practice quiz</button>`;}
+if(tab=="f"){const c=fd[fi];v.innerHTML=`<p class="mu">Card ${fi+1} of ${fd.length} — tap the card to flip</p><div class="c fc" onclick="flip=!flip;draw()">${flip?`<div>${c[1]}<div class="tip">💡 ${c[2]}</div></div>`:`<b>${c[0]}</b>`}</div><div class="row"><button onclick="fi=(fi+fd.length-1)%fd.length;flip=false;draw()">← Prev</button><button onclick="fi=(fi+1)%fd.length;flip=false;draw()">Next →</button><button onclick="fd=sh(fd);fi=0;flip=false;draw()">🔀 Shuffle</button></div>`;}}
+function ans(i,j){if(qs[i].d==null){qs[i].d=qs[i].o[j];draw()}}
+fd=sh(S[0].n);newQ();nav();draw();
+</script></body></html>
